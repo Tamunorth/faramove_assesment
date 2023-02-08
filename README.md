@@ -4,13 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Faramove assesment application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+![Simulator Screen Shot - iPhone 13 mini - 2023-02-08 at 11 41 24](https://user-images.githubusercontent.com/77057934/217507362-e0e3f42f-fc9e-48ff-93ae-6dd4083ff153.png)![Simulator Screen Shot - iPhone 13 mini - 2023-02-08 at 11 41 30](https://user-images.githubusercontent.com/77057934/217507378-db07d6b4-b590-4f58-b098-f359118dbcc3.png)
+

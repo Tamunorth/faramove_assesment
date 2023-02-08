@@ -1,5 +1,6 @@
 import 'package:faramove_assesment/constants/pallets.dart';
 import 'package:faramove_assesment/presentation/pages/community/widgets/app_bar.dart';
+import 'package:faramove_assesment/presentation/pages/podcast/podcast_page.dart';
 import 'package:faramove_assesment/presentation/shared/text_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -104,29 +105,31 @@ class CommunityPageState extends State<CommunityPage> {
                         ),
                       ],
                     ),
-                    Container(
-                      height: 32,
-                      width: 78,
-                      margin: EdgeInsets.only(bottom: 5),
-                      decoration: BoxDecoration(
-                        color: Pallets.blue,
-                        borderRadius: BorderRadius.circular(6),
-                      ),
-                      child: Center(
-                        child: TextView(
-                          text: 'Join',
-                          fontSize: 14,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
+                    InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const PodcastPage()));
+                      },
+                      child: Container(
+                        height: 32,
+                        width: 78,
+                        margin: EdgeInsets.only(bottom: 5),
+                        decoration: BoxDecoration(
+                          color: Pallets.blue,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        child: Center(
+                          child: TextView(
+                            text: 'Join',
+                            fontSize: 14,
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ),
                     )
                   ],
                 ),
-                SizedBox(
-                  height: 10,
-                ),
-                Divider(),
                 SizedBox(
                   height: 10,
                 ),

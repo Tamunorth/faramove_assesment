@@ -37,31 +37,33 @@ class PodcastAppBar extends StatelessWidget implements PreferredSizeWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-                height: 32,
-                width: 32,
-                decoration: const BoxDecoration(shape: BoxShape.circle),
-                child: SvgPicture.asset(
-                  'assets/svgs/account.svg',
-                )),
-            SizedBox(
+            InkWell(
+              onTap: () {
+                Navigator.pop(context);
+              },
+              child: const Icon(
+                Icons.keyboard_arrow_down_rounded,
+                size: 25,
+              ),
+            ),
+            const SizedBox(
               width: 12,
             ),
-            Expanded(
+            const Expanded(
               child: TextView(
-                text: 'Hi, Sarah',
+                text: 'Stay Motivated Ep. 1',
                 fontSize: 20,
                 fontWeight: FontWeight.w600,
               ),
             ),
             IconContainer(
-              icon: SvgPicture.asset('assets/svgs/chat.svg'),
+              icon: SvgPicture.asset('assets/svgs/save.svg'),
             ),
             SizedBox(
               width: 16,
             ),
             IconContainer(
-              icon: SvgPicture.asset('assets/svgs/notification.svg'),
+              icon: Icon(Icons.file_upload_outlined),
             ),
           ],
         ),

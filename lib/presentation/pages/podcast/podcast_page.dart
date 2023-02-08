@@ -26,7 +26,13 @@ class PodcastPageState extends State<PodcastPage> {
       appBar: PodcastAppBar(
         onMenuTap: () {},
       ),
-      body: Container(),
+      body: Container(
+        child: Column(
+          children: [
+            Image.asset('assets/pngs/confettiCard.png'),
+          ],
+        ),
+      ),
     );
   }
 }
